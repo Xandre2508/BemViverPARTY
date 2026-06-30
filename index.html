@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bem Viver Party – Festas Inesquecíveis</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Playfair+Display:ital,wght@0,700;1,600&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+<!-- NAV -->
+    <nav id="main-nav">
+    <a href="#" class="nav-logo">
+        <img src="img/logo/BemViver_Party_Logotipo-removebg-preview.png" alt="Logótipo Bem Viver Party" class="logo-img" />
+    </a>
+    <div class="nav-links">
+        <a href="#spaces">Os Espaços</a>
+        <a href="#reviews">Opiniões</a>
+        <a href="#reserva" class="nav-cta">Fazer Reserva</a>
+    </div>
+    </nav>
+
+    <div id="back-to-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">↑</div>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-content">
+    <div class="hero-badge">🎈 Festas Inesquecíveis</div>
+    <h1 class="hero-title">
+      O lugar onde a alegria<br><em>ganha forma</em>
+    </h1>
+    <p class="hero-sub">
+      Espaços pensados para criar memórias mágicas.<br>
+      Marco de Canaveses · Feira Nova
+    </p>
+    <div class="hero-buttons">
+      <a href="#reserva" class="btn-primary">🎉 Reservar Agora</a>
+      <a href="#spaces" class="btn-ghost">Ver os Espaços</a>
+    </div>
+  </div>
+  <div class="hero-scroll">Descobre</div>
+</section>
+
+<!-- LOCATIONS STRIP -->
+<div class="locations-strip">
+  <div class="location-item"><span class="pin">📍</span> Marco de Canaveses</div>
+  <div class="location-item"><span class="pin">📍</span> Feira Nova</div>
+</div>
+
+<!-- SPACES -->
+<section id="spaces" class="section fade-section">
+  <div class="section-inner">
+    <p class="section-eyebrow">Dois Espaços Únicos</p>
+    <h2 class="section-title">Escolhe o teu <span>espaço de sonho</span></h2>
+    <p class="section-lead">Cada espaço foi preparado com cuidado para que cada festa seja única e cheia de magia.</p>
+
+    <div class="spaces-grid fade-grid">
+      
+      <!-- CARTÃO MARCO -->
+      <div class="space-card fade-item">
+        <img
+          src="https://images.unsplash.com/photo-1527529482837-4698179dc6ce?w=900&q=80"
+          alt="Espaço Marco de Canaveses"
+          loading="lazy"
+        />
+        <div class="space-card-overlay">
+          <p class="space-city">📍 Marco de Canaveses</p>
+          <h3 class="space-name">Bem Viver Marco</h3>
+          <p class="space-desc">Espaço amplo, colorido e preparado para festas inesquecíveis.</p>
+          <div class="space-actions">
+            <span class="space-tag">Disponível para reserva</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARTÃO FEIRA NOVA (COM GALERIA) -->
+      <div class="space-card fade-item">
+        <img
+          src="https://images.unsplash.com/photo-1464349095431-e9a21285b5f3?w=900&q=80"
+          alt="Espaço Feira Nova"
+          loading="lazy"
+        />
+        <div class="space-card-overlay">
+          <p class="space-city">📍 Feira Nova</p>
+          <h3 class="space-name">Bem Viver Feira Nova</h3>
+          <p class="space-desc">Um espaço encantado para as melhores celebrações.</p>
+          
+          <div class="space-actions">
+            <span class="space-tag">Disponível para reserva</span>
+            <!-- BOTÃO DA GALERIA -->
+            <button class="btn-gallery" onclick="openGallery('feira-nova', event)">📸 Ver Galeria</button>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section id="reviews" class="section fade-section">
+  <div class="section-inner">
+    <p class="section-eyebrow">⭐ O Que Dizem de Nós</p>
+    <h2 class="section-title">Famílias que <span>viveram a magia</span></h2>
+    <p class="section-lead">Mais de centenas de festas realizadas. Vê o que as famílias dizem sobre a sua experiência.</p>
+
+    <div class="reviews-grid fade-grid">
+
+      <div class="review-card fade-item">
+        <div class="review-stars"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+        <p class="review-text">
+          A festa do meu filho ficou absolutamente espetacular! A Sofia foi incansável, tudo foi tratado com tanto carinho e atenção ao detalhe. As crianças adoraram e os pais também! Recomendo de olhos fechados.
+        </p>
+        <div class="review-author">
+          <div class="review-avatar">AC</div>
+          <div>
+            <div class="review-name">Ana Carvalho</div>
+            <div class="review-local">Marco de Canaveses</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="review-card fade-item">
+        <div class="review-stars"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+        <p class="review-text">
+          Fizemos a festa da nossa filha aqui e foi um sonho. O espaço é lindo, limpo e muito bem decorado. O lanche estava delicioso e as crianças não queriam ir embora! Voltamos com certeza!
+        </p>
+        <div class="review-author">
+          <div class="review-avatar">MP</div>
+          <div>
+            <div class="review-name">Mariana Pinto</div>
+            <div class="review-local">Feira Nova</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="review-card fade-item">
+        <div class="review-stars"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+        <p class="review-text">
+          Profissionalismo a 100%! Desde o primeiro contacto até ao fim da festa tudo correu na perfeição. O espaço tem uma energia muito especial, as crianças sentiram mesmo que era o dia delas. Obrigada!
+        </p>
+        <div class="review-author">
+          <div class="review-avatar">RS</div>
+          <div>
+            <div class="review-name">Rita Sousa</div>
+            <div class="review-local">Marco de Canaveses</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="review-card fade-item">
+        <div class="review-stars"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+        <p class="review-text">
+          O melhor espaço de festas que já vi! A decoração é impecável, o atendimento é fabuloso. A Sofia faz de tudo para garantir que tudo fica perfeito. Vamos lá todos os anos, de certeza!
+        </p>
+        <div class="review-author">
+          <div class="review-avatar">JF</div>
+          <div>
+            <div class="review-name">João Ferreira</div>
+            <div class="review-local">Feira Nova</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="review-card fade-item">
+        <div class="review-stars"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+        <p class="review-text">
+          Marcámos há 2 meses e chegou o grande dia – superou todas as expectativas! O espaço é enorme, muito seguro para as crianças. O processo de marcação online é super simples. 5 estrelas!
+        </p>
+        <div class="review-author">
+          <div class="review-avatar">CM</div>
+          <div>
+            <div class="review-name">Catarina Mota</div>
+            <div class="review-local">Marco de Canaveses</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="review-card fade-item">
+        <div class="review-stars"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+        <p class="review-text">
+          Adorámos tudo! A Sofia é uma pessoa incrível, muito atenciosa e prestável. O espaço tem uma decoração adorável, as crianças ficaram encantadas. Já recomendei a vários amigos!
+        </p>
+        <div class="review-author">
+          <div class="review-avatar">LP</div>
+          <div>
+            <div class="review-name">Luísa Pereira</div>
+            <div class="review-local">Feira Nova</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT BAR -->
+<div class="contact-bar fade-section">
+  <h2>Tens alguma dúvida?</h2>
+  <p>Fala diretamente com a Sofia — estamos aqui para te ajudar!</p>
+  <div class="contact-buttons">
+    <a href="https://wa.me/351969228054" target="_blank" class="contact-btn whatsapp">
+      <svg viewBox="0 0 24 24" width="22" height="22" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+      WhatsApp · 969 228 054
+    </a>
+    <a href="mailto:sofia238.st@gmail.com" class="contact-btn email">
+      <svg viewBox="0 0 24 24" width="22" height="22" fill="#214E96"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+      sofia238.st@gmail.com
+    </a>
+  </div>
+</div>
+
+<!-- RESERVATION CTA SECTION -->
+<section class="section fade-section" style="background:#fff; padding: 80px 40px 20px; text-align:center;">
+  <div class="section-inner" style="max-width:600px; margin:0 auto;">
+    <p class="section-eyebrow" style="text-align:center;">🎂 Reserva Rápida</p>
+    <h2 class="section-title" style="text-align:center;">Pronto para criar <span>memórias mágicas?</span></h2>
+    <p class="section-lead" style="margin: 0 auto 32px; text-align:center;">Preenche o formulário abaixo e entraremos em contacto para confirmar a tua reserva!</p>
+  </div>
+</section>
+
+<!-- RESERVATION FORM -->
+<section id="reserva">
+  <div class="reserva-inner">
+
+    <div class="reserva-card fade-section">
+      <form id="reservation-form" class="fade-grid">
+
+        <!-- LOCAL -->
+        <div class="form-group fade-item">
+          <label class="form-label">Espaço <span>*</span></label>
+          <div class="toggle-group">
+            <button type="button" class="toggle-btn active" data-value="marco" onclick="selectLocal(this)">📍 Marco de Canaveses</button>
+            <button type="button" class="toggle-btn" data-value="feira" onclick="selectLocal(this)">📍 Feira Nova</button>
+          </div>
+          <input type="hidden" id="local-input" value="marco" required />
+        </div>
+
+        <!-- DATA + HORA -->
+        <div class="form-row fade-item">
+          <div class="form-group" style="margin-bottom:0">
+            <label class="form-label" for="data">Data <span>*</span></label>
+            <input type="date" id="data" name="data" class="form-input" required />
+          </div>
+          <div class="form-group" style="margin-bottom:0">
+            <label class="form-label" for="hora">Hora <span>*</span></label>
+            <input type="time" id="hora" name="hora" class="form-input" required />
+          </div>
+        </div>
+
+        <!-- CRIANÇAS -->
+        <div class="form-group fade-item" style="margin-top:24px">
+          <label class="form-label" for="criancas">Número de Crianças <span>*</span></label>
+          <input type="number" id="criancas" name="criancas" class="form-input" min="1" max="100" placeholder="Ex: 15" required />
+        </div>
+
+        <!-- LANCHE -->
+        <div class="form-group fade-item">
+          <label class="form-label">Lanche Incluído? <span>*</span></label>
+          <div class="lanche-group">
+            <button type="button" class="lanche-btn active" data-value="sim" onclick="selectLanche(this)">🍰 Sim, quero lanche</button>
+            <button type="button" class="lanche-btn" data-value="nao" onclick="selectLanche(this)">Não, obrigado</button>
+          </div>
+          <input type="hidden" id="lanche-input" value="sim" />
+        </div>
+
+        <!-- NOME -->
+        <div class="form-group fade-item">
+          <label class="form-label" for="nome">O teu Nome <span>*</span></label>
+          <input type="text" id="nome" name="nome" class="form-input" placeholder="Ex: Sofia Martins" required />
+        </div>
+
+        <!-- TELEFONE -->
+        <div class="form-group fade-item">
+          <label class="form-label" for="telefone">Telefone <span>*</span></label>
+          <input type="tel" id="telefone" name="telefone" class="form-input" placeholder="Ex: 912 345 678" required />
+        </div>
+
+        <!-- NOTAS -->
+        <div class="form-group fade-item">
+          <label class="form-label" for="notas">Notas Adicionais</label>
+          <textarea id="notas" name="notas" class="form-textarea" placeholder="Tema da festa, pedidos especiais, alergias..."></textarea>
+        </div>
+
+        <button type="submit" class="btn-submit fade-item">🎉 Enviar Pedido de Reserva</button>
+        <p class="form-note fade-item">Entraremos em contacto em até 24 horas para confirmar a sua reserva.</p>
+      </form>
+
+      <div class="success-box" id="success-msg">
+        <div style="font-size:3rem;margin-bottom:12px">🎉</div>
+        <h3>Pedido enviado com sucesso!</h3>
+        <p>Obrigada pelo teu interesse! A Sofia vai entrar em contacto contigo brevemente para confirmar todos os detalhes.</p>
+        <p style="margin-top:14px;font-weight:700;color:var(--blue)">Enquanto isso, segue-nos no Instagram e Facebook para inspirações!</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- SOCIAL BAR -->
+<div class="social-bar fade-section">
+  <p>Segue-nos nas redes sociais</p>
+  <div class="social-links">
+    <a href="https://www.facebook.com/bemviverparty/?locale=pt_PT" target="_blank" class="social-link fb" aria-label="Facebook Bem Viver Party">
+      <svg viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+    </a>
+    <a href="https://www.instagram.com/bemviverparty/" target="_blank" class="social-link ig" aria-label="Instagram Bem Viver Party">
+      <svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path fill="none" stroke="#fff" stroke-width="1.8" d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line fill="none" stroke="#fff" stroke-width="2" x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+    </a>
+  </div>
+</div>
+
+<!-- GALLERY MODAL (NOVO) -->
+<div id="gallery-modal" class="gallery-modal">
+  <span class="gallery-close" onclick="closeGallery()">&times;</span>
+  <div class="gallery-content">
+    <button class="gallery-prev" onclick="changeImage(-1)">&#10094;</button>
+    <img id="gallery-img" src="" alt="Galeria de Fotos do Espaço">
+    <button class="gallery-next" onclick="changeImage(1)">&#10095;</button>
+  </div>
+  <div class="gallery-caption" id="gallery-caption"></div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <p>© 2025 <strong>Bem Viver Party</strong> · Marco de Canaveses & Feira Nova · <a href="mailto:sofia238.st@gmail.com" style="color:rgba(255,255,255,.4);text-decoration:none;">sofia238.st@gmail.com</a> · <a href="https://wa.me/351969228054" style="color:rgba(255,255,255,.4);text-decoration:none;">969 228 054</a></p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
